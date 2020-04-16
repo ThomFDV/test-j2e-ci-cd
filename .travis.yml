@@ -2,6 +2,6 @@ language: java
 jdk: oraclejdk11
 script:
   - chmod +x backend/mvnw
-  - cd backend && ./mvnw clean test -B
-#  - ./mvnw test -B
+  - cd backend && ./mvnw -q clean install
+  - ./mvnw test -B
   - ./mvnw -q spring-boot:run &
