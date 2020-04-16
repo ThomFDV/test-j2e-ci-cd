@@ -4,4 +4,4 @@ script:
   - chmod +x backend/mvnw
   - cd backend && ./mvnw -q clean verify
   - ./mvnw test -B
-#  - cd ../holdings-api && mvnw -q spring-boot:run
+  - ./mvnw -q spring-boot:run
