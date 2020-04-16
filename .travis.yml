@@ -5,8 +5,8 @@
 #  - cd backend && ./mvnw -q clean install
 #  - ./mvnw test -B
 #  - ./mvnw -q spring-boot:run &
-os:
-  - linux
+#os:
+#  - linux
 #  services:
 #    - docker
   language: node_js
