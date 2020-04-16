@@ -1,2 +1,10 @@
+os:
+  - linux
 language: java
-jdk: oraclejdk11
+jdk:
+  - oraclejdk8
+script:
+  - chmod +x backend/mvnw
+  - cd backend && ./mvnw -q clean verify
+  - ./mvnw test -B
+#  - cd ../holdings-api && mvnw -q spring-boot:run
