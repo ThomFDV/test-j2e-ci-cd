@@ -11,7 +11,7 @@ public class J2EProjectApplication {
 
 	@RequestMapping("/")
 	public String home() {
-		return "Hello World";
+		return "This is a test";
 	}
 
 	public static void main(String[] args) {
