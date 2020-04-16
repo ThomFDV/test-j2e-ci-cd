@@ -1,0 +1,7 @@
+<section class="container my-4">
+  <app-search-gif (searchEvent)="receiveSearch($event)"></app-search-gif>
+  <div *ngIf="!isSearch" class="text-center mt-4 mb-3">
+    <button mat-raised-button color="primary" (click)="openRandomGif()">Get a Random Gif</button>
+  </div>
+  <app-trending-gif *ngIf="!isSearch"></app-trending-gif>
+</section>
