@@ -35,7 +35,7 @@
 #    - cd backend && ./mvnw -q clean install
 #    - ./mvnw test -B
 #    - ./mvnw -q spring-boot:run &
-    - cd ../frontend && npm i
+    - cd frontend && npm i
 #    - npm test
     - npm run build --prod
 #    - npm run e2e
