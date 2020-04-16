@@ -1,17 +1,17 @@
-language: java
-jdk: oraclejdk11
-script:
-  - chmod +x backend/mvnw
-  - cd backend && ./mvnw -q clean install
-  - ./mvnw test -B
-  - ./mvnw -q spring-boot:run &
-#os:
-#  - linux
+#language: java
+#jdk: oraclejdk11
+#script:
+#  - chmod +x backend/mvnw
+#  - cd backend && ./mvnw -q clean install
+#  - ./mvnw test -B
+#  - ./mvnw -q spring-boot:run &
+os:
+  - linux
 #  services:
 #    - docker
-#  language: node_js
-#  node_js:
-#    - "12.16.1"
+  language: node_js
+  node_js:
+    - "12.16.1"
 #  addons:
 #    apt:
 #      sources:
@@ -30,11 +30,12 @@ script:
 #    - export CHROME_BIN=/usr/bin/google-chrome
 #    - export DISPLAY=:99.0
 #    - sh -e /etc/init.d/xvfb start
-#  script:
+  script:
 #    - chmod +x backend/mvnw
 #    - cd backend && ./mvnw -q clean install
 #    - ./mvnw test -B
 #    - ./mvnw -q spring-boot:run &
-#    - cd ../frontend && npm i && npm test
-#    - npm run build --prod
+    - cd ../frontend && npm i
+#    - npm test
+    - npm run build --prod
 #    - npm run e2e
